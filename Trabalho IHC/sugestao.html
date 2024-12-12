@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda Feliz</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: none;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #81c784;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+
+        .sidebar h1 {
+            font-size: 1.5em;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #66bb6a;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #388e3c;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .options {
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            display: block;
+            margin-top: 10px;
+            width: 300px;
+            height: 100px;
+        }
+
+        @media (max-height: 600px) {
+            .sidebar {
+                font-size: 0.9em;
+            }
+
+            .menu-item {
+                padding: 8px;
+            }
+        }
+
+        #myTextBox {
+             width: 500px; /* Adjust width as needed */
+             height: 200px; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Fazenda Feliz</h1>
+            <a href="comunidade.html" class="menu-item">Comunidade de Agricultores Locais</a>
+            <a href="cadastro.html" class="menu-item">Cadastro de Famílias</a>
+            <a href="alimentos.html" class="menu-item">Alimentos</a>
+            <a href="patrocinadores.html" class="menu-item">Patrocinadores</a>
+            <a href="eventos.html" class="menu-item">Eventos</a>
+            <a href="quem-somos.html" class="menu-item">Quem somos</a>
+            <a href="sugestao.html" class="menu-item">Sugestões, Reclamações e Denúncias</a>
+        </div>
+        <div class="main-content">
+            <div class="options-container">
+                <div>
+                    <h1>Caixa de Mensagem ✉️</h1>
+                    <p>Escolha uma das opções abaixo sugestão, reclamação ou denúncia<br>
+                    e insira a sua mensagem.
+                    </p>
+                    <input type="radio" name="opcao" value="opcao1"> Sugestão<br>
+                    <input type="radio" name="opcao" value="opcao2"> Reclamações<br>
+                    <input type="radio" name="opcao" value="opcao3"> Denuncias
+                   </div>
+                  <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+                  <button>Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
